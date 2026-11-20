@@ -151,3 +151,16 @@ section { padding: 64px 0; }
   .brand span { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Extra shots */
+.feature .stack { display: grid; gap: 20px; min-width: 0; }
+.feature .stack .tablet { max-width: 340px; justify-self: center; width: 100%; }
+.everywhere { grid-template-columns: 1.6fr 1fr; }
+.phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; max-width: 760px; margin: 48px auto 0; align-items: end; }
+.phones figure { margin: 0; }
+.phones figcaption { text-align: center; margin-top: 14px; font-weight: 650; color: var(--muted); }
+@media (max-width: 760px) {
+  .everywhere { grid-template-columns: 1fr; }
+  .phones { grid-template-columns: 1fr; justify-items: center; }
+  .phones figure { width: 100%; max-width: 220px; }
+}

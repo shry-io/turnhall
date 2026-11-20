@@ -23,7 +23,7 @@
 <!--
   Screenshot slots (all in assets/img/shots/, relative paths):
     ipad-conversation.jpg  hero + social preview     ipad-summary.jpg   tasks and workspaces
-    ipad-project.jpg       everywhere (iPad)         ipad-terminal.jpg  terminal and file transfer
+    ipad-project.jpg, iphone-*.jpg, ipad-image-zoom.jpg, *-dark.jpg (dark variants via <picture>)         ipad-terminal.jpg  terminal and file transfer
     ipad-helpers.jpg       helpers                   iphone-tasks.jpg
     mac-task.png, mac-project.png, mac-preview.png   Mac app
   To replace a shot, overwrite the file with the same name (JPEG, max 1000 px wide for iPad, 560 px for iPhone).
@@ -49,7 +49,7 @@
         <h1 id="hero-title">Turnhall</h1>
         <p class="tagline">Your AI coding agents, in your pocket. Run them on your Mac; follow, answer and steer them from anywhere.</p>
         <div class="frame tablet hero-shot">
-          <img src="assets/img/shots/ipad-conversation.jpg" width="1000" height="1333" alt="Turnhall on iPad: a list of tasks and workspaces on the left, and on the right a coding agent's conversation with tool calls and a reply.">
+          <picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/shots/ipad-conversation-dark.jpg"><img src="assets/img/shots/ipad-conversation.jpg" width="1000" height="1333" alt="Turnhall on iPad: a list of tasks and workspaces on the left, and on the right a coding agent's conversation with tool calls and a reply."></picture>
         </div>
         <div class="devices" aria-label="Available on">
           <span class="pill">Mac</span><span class="pill">iPad</span><span class="pill">iPhone</span>
@@ -99,7 +99,8 @@
             <h3><span class="icon" aria-hidden="true">📁</span>Project browser</h3>
             <p>Browse the file tree, read code with syntax highlighting, zoom into images and open PDFs and SVGs. Hold a file path in a reply to preview it without leaving the conversation.</p>
           </div>
-          <div class="frame mac"><img src="assets/img/shots/mac-preview.png" width="1600" height="1000" alt="Holding a file path in an agent's reply shows a quick image preview with its name, size and an Open button." loading="lazy"></div>
+          <div class="stack"><div class="frame mac"><img src="assets/img/shots/mac-preview.png" width="1600" height="1000" alt="Holding a file path in an agent's reply shows a quick image preview with its name, size and an Open button." loading="lazy"></div>
+          <div class="frame tablet"><img src="assets/img/shots/ipad-image-zoom.jpg" width="1000" height="1333" alt="An image open in the Project tab on iPad, with zoom controls above it." loading="lazy"></div></div>
         </article>
 
         <article class="feature flip">
@@ -134,7 +135,12 @@
         <div class="everywhere">
           <figure><div class="frame mac"><img src="assets/img/shots/mac-project.png" width="1600" height="1000" alt="The Project tab in the Mac app: a Swift file open beside the file tree." loading="lazy"></div><figcaption>Mac</figcaption></figure>
           <figure><div class="frame tablet"><img src="assets/img/shots/ipad-project.jpg" width="1000" height="1333" alt="The Project tab on iPad with a Swift file open and the file tree alongside." loading="lazy"></div><figcaption>iPad</figcaption></figure>
-          <figure class="ph"><div class="frame phone"><img src="assets/img/shots/iphone-tasks.jpg" width="560" height="1217" alt="The task list on iPhone, showing tasks, workspaces and an Answer prompt from an agent." loading="lazy"></div><figcaption>iPhone</figcaption></figure>
+
+        </div>
+        <div class="phones">
+          <figure class="ph"><div class="frame phone"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/shots/iphone-conversation-dark.jpg"><img src="assets/img/shots/iphone-conversation.jpg" width="560" height="1217" alt="A task conversation on iPhone: the agent reads files, edits code and runs the tests." loading="lazy"></picture></div><figcaption>iPhone: follow</figcaption></figure>
+          <figure class="ph"><div class="frame phone"><img src="assets/img/shots/iphone-tasks.jpg" width="560" height="1217" alt="The task list on iPhone, showing tasks, workspaces and an Answer prompt from an agent." loading="lazy"></div><figcaption>iPhone: answer</figcaption></figure>
+          <figure class="ph"><div class="frame phone"><img src="assets/img/shots/iphone-pairing.jpg" width="560" height="1217" alt="The pairing screen on iPhone, with a button to scan the code shown by Turnhall Home." loading="lazy"></div><figcaption>iPhone: pair</figcaption></figure>
         </div>
       </div>
     </section>
