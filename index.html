@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Turnhall: your AI coding agents, in your pocket</title>
+  <meta name="description" content="Run AI coding agents on your Mac; follow, answer and steer them from your iPad or iPhone. No accounts, no tracking, your keys stay on your Mac.">
+  <meta name="theme-color" content="#C8613F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Turnhall">
+  <meta property="og:title" content="Turnhall: your AI coding agents, in your pocket">
+  <meta property="og:description" content="Run AI coding agents on your Mac; follow, answer and steer them from your iPad or iPhone. No accounts, no tracking, your keys stay on your Mac.">
+  <meta property="og:image" content="https://shry-io.github.io/turnhall/assets/img/shots/ipad-conversation.jpg">
+  <meta property="og:image:alt" content="Turnhall on iPad, following a coding agent's conversation.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--
+  Screenshot slots (all in assets/img/shots/, relative paths):
+    ipad-conversation.jpg  hero + social preview     ipad-summary.jpg   tasks and workspaces
+    ipad-project.jpg       everywhere (iPad)         ipad-terminal.jpg  terminal and file transfer
+    ipad-helpers.jpg       helpers                   iphone-tasks.jpg
+    mac-task.png, mac-project.png, mac-preview.png   Mac app
+  To replace a shot, overwrite the file with the same name (JPEG, max 1000 px wide for iPad, 560 px for iPhone).
+-->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Turnhall home">
+        <img src="assets/img/app-icon.png" alt="" width="38" height="38">
+        <span>Turnhall</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="./" aria-current="page">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h1 id="hero-title">Turnhall</h1>
+        <p class="tagline">Your AI coding agents, in your pocket. Run them on your Mac; follow, answer and steer them from anywhere.</p>
+        <div class="frame tablet hero-shot">
+          <img src="assets/img/shots/ipad-conversation.jpg" width="1000" height="1333" alt="Turnhall on iPad: a list of tasks and workspaces on the left, and on the right a coding agent's conversation with tool calls and a reply.">
+        </div>
+        <div class="devices" aria-label="Available on">
+          <span class="pill">Mac</span><span class="pill">iPad</span><span class="pill">iPhone</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="kicker">How it works</span>
+          <h2 id="how-title">Three steps, no accounts</h2>
+        </div>
+        <ol class="steps">
+          <li><h3>Install Turnhall Home on your Mac</h3><p>It runs your agents and keeps your projects, keys and files where they already are.</p></li>
+          <li><h3>Scan the QR code with Turnhall</h3><p>Pair your iPad or iPhone in a few seconds, straight from the Home window.</p></li>
+          <li><h3>Your tasks follow you</h3><p>Pick up the same conversations on any paired device, and answer when an agent needs you.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="kicker">What you get</span>
+          <h2 id="features-title">Built for how developers work with agents</h2>
+        </div>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3><span class="icon" aria-hidden="true">⚙️</span>Every engine</h3>
+            <p>Claude, Cursor, Codex and Antigravity, side by side. Each task runs on its own engine, so you can pick the right tool for the job and switch without changing how you work.</p>
+          </div>
+          <div class="frame mac"><img src="assets/img/shots/mac-task.png" width="1600" height="1000" alt="Turnhall on the Mac: a task agent coordinating workers, with Claude and Codex tasks listed in the sidebar." loading="lazy"></div>
+        </article>
+
+        <article class="feature flip">
+          <div class="feature-text">
+            <h3><span class="icon" aria-hidden="true">🗂️</span>Tasks and workspaces</h3>
+            <p>A task agent coordinates several workspaces, collects their reports and keeps you across it all. Each task gets a readable summary, always labelled with who wrote it: &ldquo;Summary by &hellip;&rdquo;.</p>
+          </div>
+          <div class="frame tablet"><img src="assets/img/shots/ipad-summary.jpg" width="1000" height="1333" alt="The Summary tab of a task on iPad, with an overview, workspace status, decisions and next steps." loading="lazy"></div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3><span class="icon" aria-hidden="true">📁</span>Project browser</h3>
+            <p>Browse the file tree, read code with syntax highlighting, zoom into images and open PDFs and SVGs. Hold a file path in a reply to preview it without leaving the conversation.</p>
+          </div>
+          <div class="frame mac"><img src="assets/img/shots/mac-preview.png" width="1600" height="1000" alt="Holding a file path in an agent's reply shows a quick image preview with its name, size and an Open button." loading="lazy"></div>
+        </article>
+
+        <article class="feature flip">
+          <div class="feature-text">
+            <h3><span class="icon" aria-hidden="true">✨</span>Helpers</h3>
+            <ul>
+              <li>Summaries, proofreading, dictation and read aloud.</li>
+              <li>Bring your own models and keys.</li>
+              <li>Off means off: every helper can be switched off.</li>
+            </ul>
+          </div>
+          <div class="frame tablet"><img src="assets/img/shots/ipad-helpers.jpg" width="900" height="1038" alt="The Helpers screen on iPad, listing connections such as Claude helper, Gemini and Apple speech with what each is used for." loading="lazy"></div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h3><span class="icon" aria-hidden="true">⌨️</span>Terminal and file transfer</h3>
+            <p>A real shell on your Mac, and drag-and-drop file transfer. Both work on your local network only, and both stay off until you allow them for each device.</p>
+          </div>
+          <div class="frame tablet"><img src="assets/img/shots/ipad-terminal.jpg" width="1000" height="1333" alt="The Terminal tab on iPad, showing a zsh session on the Mac running ls and git status." loading="lazy"></div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="everywhere-title">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="kicker">Everywhere you are</span>
+          <h2 id="everywhere-title">Mac, iPad and iPhone</h2>
+          <p>One set of tasks, three ways to reach it.</p>
+        </div>
+        <div class="everywhere">
+          <figure><div class="frame mac"><img src="assets/img/shots/mac-project.png" width="1600" height="1000" alt="The Project tab in the Mac app: a Swift file open beside the file tree." loading="lazy"></div><figcaption>Mac</figcaption></figure>
+          <figure><div class="frame tablet"><img src="assets/img/shots/ipad-project.jpg" width="1000" height="1333" alt="The Project tab on iPad with a Swift file open and the file tree alongside." loading="lazy"></div><figcaption>iPad</figcaption></figure>
+          <figure class="ph"><div class="frame phone"><img src="assets/img/shots/iphone-tasks.jpg" width="560" height="1217" alt="The task list on iPhone, showing tasks, workspaces and an Answer prompt from an agent." loading="lazy"></div><figcaption>iPhone</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="private-title">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="kicker">Private by design</span>
+          <h2 id="private-title">Your Mac stays in charge</h2>
+        </div>
+        <ul class="ticks">
+          <li>Runs on your own Mac.</li>
+          <li>No accounts, no tracking, no ads.</li>
+          <li>Your keys stay on your Mac.</li>
+          <li>TLS with pinned certificates.</li>
+        </ul>
+        <p class="center"><a href="privacy/">Read the privacy policy</a></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="get-title">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="kicker">Get it</span>
+          <h2 id="get-title">Try Turnhall</h2>
+        </div>
+        <div class="cta">
+          <div class="card"><h3>Join the beta</h3><p>For iPad and iPhone, through TestFlight.</p><span class="btn soon">Coming soon</span></div>
+          <div class="card"><h3>Turnhall Home for Mac</h3><p>The app that runs your agents.</p><span class="btn soon">Coming soon</span></div>
+        </div>
+        <p class="req">Requires macOS on Apple silicon, and iOS or iPadOS 27.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="./">Home</a><a href="support.html">Support</a><a href="privacy/">Privacy</a>
+      </nav>
+      <div>
+        <small>&copy; 2026 AndroidOven. Made with care.</small>
+        <small>Apple, Mac, iPad and iPhone are trademarks of Apple Inc. Claude is a trademark of Anthropic. Other names belong to their owners.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
