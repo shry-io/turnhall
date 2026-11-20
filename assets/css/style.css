@@ -164,3 +164,7 @@ section { padding: 64px 0; }
   .phones { grid-template-columns: 1fr; justify-items: center; }
   .phones figure { width: 100%; max-width: 220px; }
 }
+
+/* Home window shots */
+.feature .stack .shot { margin: 0; }
+.feature .stack .shot figcaption { text-align: center; margin-top: 12px; font-weight: 650; color: var(--muted); }
